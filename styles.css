@@ -1,0 +1,158 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
+}
+
+.section-header {
+  text-align: center;
+  padding: 40px 20px 0px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.section-header h1 {
+  font-size: 1.45rem;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 10px;
+}
+
+.section-header h1 span {
+  font-weight: 600;
+}
+
+.section-header p {
+  font-size: 0.9rem;
+  margin-bottom: 65px;
+  line-height: 1.7;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 70px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 5px 25px;
+  text-align: left;
+  flex-basis: 100%;
+  width: 240px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.card p {
+  margin-top: 5px;
+  font-size: 0.78rem;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.card img {
+  width: 50px;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.supervisor-card {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.team-card {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma-card {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator-card {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media (min-width: 375px) {
+  .feature-section {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    width: 400px;
+  }
+
+  .section-header h1 {
+    font-size: 1.78rem;
+  }
+
+  .section-header p {
+    font-size: 0.75rem;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    justify-content: center;
+  }
+
+  .supervisor-card {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .team-card,
+  .karma-card {
+    grid-column: 2;
+  }
+
+  .calculator-card {
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+
+@media (max-width: 376px) {
+  .section-header {
+    padding: 20px 10px 0px;
+    width: 90%;
+  }
+
+  .section-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .section-header p {
+    font-size: 0.85rem;
+    margin-bottom: 50px;
+    line-height: 1.5;
+  }
+
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 280px;
+  }
+}

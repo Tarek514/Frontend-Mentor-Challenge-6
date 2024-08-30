@@ -127,32 +127,3 @@ body {
     grid-row-end: 3;
   }
 }
-
-@media (max-width: 376px) {
-  .section-header {
-    padding: 20px 10px 0px;
-    width: 90%;
-  }
-
-  .section-header h1 {
-    font-size: 1.3rem;
-  }
-
-  .section-header p {
-    font-size: 0.85rem;
-    margin-bottom: 50px;
-    line-height: 1.5;
-  }
-
-  .card-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 50px;
-  }
-
-  .card {
-    width: 90%;
-    max-width: 280px;
-  }
-}
